@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "modernwarpmenu",
+	"version": "${version}",
+	"name": "Modern Warp Menu",
+	"description": "A recreation of the fancy warp menu from SkyblockAddons, Ported to modern minecraft.",
+	"authors": [
+		"Yukkuritaku (Port)",
+		"TirelessTraveler (Original)",
+		"Nea89 (Original Credits)",
+		"Schlaumeyer (Original Credits)",
+		"Fandom SkyBlock Wiki (Original Credits)"
+	],
+	"contact": {
+		"homepage": "https://github.com/Yukkuritaku",
+		"sources": "https://github.com/Yukkuritaku/ModernWarpMenu",
+		"issues": "https://github.com/Yukkuritaku/ModernWarpMenu/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/modernwarpmenu/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"modmenu": [
+			"com.github.yukkuritaku.modernwarpmenu.compat.modmenu.ModMenuApiImpl"
+		],
+		"fabric-datagen": [
+			"com.github.yukkuritaku.modernwarpmenu.ModernWarpMenuDataGenerator"
+		],
+		"client": [
+			"com.github.yukkuritaku.modernwarpmenu.ModernWarpMenu"
+		]
+	},
+	"mixins": [
+		"modernwarpmenu.mixins.json"
+	],
+	"plugin": "com.github.yukkuritaku.modernwarpmenu.ModernWarpMenuMixinPlugin",
+	"accessWidener": "modernwarpmenu.classtweaker",
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "~26.1.2",
+		"java": ">=21",
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+
+		}
+	}
+}

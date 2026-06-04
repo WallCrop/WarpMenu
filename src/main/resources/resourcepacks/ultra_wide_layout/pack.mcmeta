@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Provides Warp menu layout for 21:9 Screens (Optional)",
+    "min_format": 88.0,
+    "max_format": 88.0
+  }
+}
